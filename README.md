@@ -2,7 +2,8 @@
 
 ## Requirements
 
-|package|description|
+### Mandatory
+|Package|Description|
 |---|---|
 |i3|tiling window manager|
 |ly|display manager (greeter)|
@@ -16,6 +17,13 @@
 |flameshot|screenshot utility|
 |git||
 |polybar|customizable status bar|
+|xorg-xrandr|display server utility for managing displays|
+
+### Optional
+|Package|Description|
+|---|---|
+|xorg-xgamma|adjust gamma corrections of a display|
+|postgresql||
 
 ## Installation
 
@@ -24,6 +32,30 @@
 Place content of `.config` into `~/.config/`
 
 Reloading i3 is done via `$mode+shift+r` after changing the config
+
+### Configuring helper for AUR
+
+Go to [Yay repo](https://github.com/Jguer/yay). Then follow instructions there:
+
+```sh
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+### Postgres
+
+```sh
+pacman -S postgresql
+
+# switch to postgres user - it will be created automatically
+sudo -u postgres
+
+# initialize db cluster
+initdb -D /var/lib/postgres/data
+
+# use
+psql
+```
 
 ### Switching shell
 
