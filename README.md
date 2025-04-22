@@ -19,4 +19,27 @@
 
 ## Installation
 
+### Configs
+
 Place content of `.config` into `~/.config/`
+
+Reloading i3 is done via `$mode+shift+r` after changing the config
+
+### Switching shell
+
+```sh
+pacman -S fish
+
+# locate where fish is at (supposedly at /sbin/fish)
+which fish 
+
+# add path to shells list
+sudo vim /etc/shells
+
+# change shell
+chsh -s /sbin/fish
+
+# logout to accept changes
+```
+
+Shell config is at ~/.config/fish/config.fish
