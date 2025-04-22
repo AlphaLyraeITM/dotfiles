@@ -1,5 +1,7 @@
 # dotfiles
 
+For Xorg Arch + i3-wm
+
 ## Requirements
 
 ### Mandatory
