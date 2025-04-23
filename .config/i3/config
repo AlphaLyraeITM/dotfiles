@@ -33,10 +33,13 @@ exec --no-startup-id nm-applet
 exec_always xset s off && xset -dpms
 
 # Setup monitors
-exec_always --no-startup-id xrandr --output DP-1 --mode 3440x1440 --rate 60 && xrandr --output DP-2 --mode 2560x1440 --right-of DP-1
+exec_always --no-startup-id ~/.config/i3/scripts/setup_display.sh
 
 # Set background
 exec_always --no-startup-id feh --bg-fill ~/.config/wallpapers/girlsitting.jpg
+
+# disable middle mouse button paste
+exec_always ~/.config/i3/scripts/disable_mmb_paste.sh
 
 # BINDINGS
 #####################################

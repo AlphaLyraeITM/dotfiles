@@ -20,6 +20,11 @@ For Xorg Arch + i3-wm
 |git||
 |polybar|customizable status bar|
 |xorg-xrandr|display server utility for managing displays|
+|pipewire-pulse||
+|pipiwire-jack||
+|pipewire-alsa||
+|wireplumber||
+|pavucontrol|GUI for audio control|
 
 ### Optional
 |Package|Description|
@@ -64,22 +69,3 @@ initdb -D /var/lib/postgres/data
 # use
 psql
 ```
-
-### Switching shell
-
-```sh
-pacman -S fish
-
-# locate where fish is at (supposedly at /sbin/fish)
-which fish 
-
-# add path to shells list
-sudo vim /etc/shells
-
-# change shell
-chsh -s /sbin/fish
-
-# logout to accept changes
-```
-
-Shell config is at ~/.config/fish/config.fish
