@@ -2,8 +2,6 @@
 
 For Xorg Arch + i3-wm
 
-ss
-
 ## Requirements
 
 ### Mandatory
@@ -28,6 +26,7 @@ ss
 |---|---|
 |xorg-xgamma|adjust gamma corrections of a display|
 |postgresql||
+|xclip|clipboard management|
 
 ## Installation
 

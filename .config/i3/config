@@ -30,10 +30,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # disable screen turning off
-exec_always --no-startup-id xset s 0 0
+exec_always xset s off && xset -dpms
 
 # Setup monitors
-exec_always --no-startup-id xrandr --output DP-1 --mode 3440x1440 --rate 140 && xrandr --output DP-2 --mode 2560x1440
+exec_always --no-startup-id xrandr --output DP-1 --mode 3440x1440 --rate 60 && xrandr --output DP-2 --mode 2560x1440 --right-of DP-1
 
 # Set background
 exec_always --no-startup-id feh --bg-fill ~/.config/wallpapers/girlsitting.jpg
