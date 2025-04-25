@@ -34,9 +34,10 @@ exec_always xset s off && xset -dpms
 
 # Setup monitors
 exec_always --no-startup-id ~/.config/i3/scripts/setup_display.sh
+workspace 1 output DP-0
 
 # Set background
-exec_always --no-startup-id feh --bg-fill ~/.config/wallpapers/girlsitting.jpg
+exec_always ~/.config/i3/scripts/setup_wallpaper.sh
 
 # disable middle mouse button paste
 exec_always ~/.config/i3/scripts/disable_mmb_paste.sh
