@@ -31,7 +31,7 @@ For Xorg Arch + i3-wm
 |---|---|
 |xorg-xgamma|adjust gamma corrections of a display|
 |postgresql||
-|xclip|clipboard management|
+|xsel|clipboard management|
 
 ## Installation
 
@@ -39,7 +39,7 @@ For Xorg Arch + i3-wm
 
 Place content of `.config` into `~/.config/`
 
-Reloading i3 is done via `$mode+shift+r` after changing the config
+Reloading i3 is done via `$mod+shift+r` after changing the config
 
 ### Configuring helper for AUR
 
